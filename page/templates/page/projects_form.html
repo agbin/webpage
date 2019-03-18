@@ -1,0 +1,33 @@
+{% extends 'page/base4.html' %}
+{% load static %}
+
+{% block content %}
+
+{% if object %}
+    <h2>Modyfikuj Projekt</h2>
+{% else %}
+    <h2>Dodaj Projekt</h2>
+{% endif %}
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form.as_p}}
+
+    {% if request.user.is_superuser %}
+        {% if object %}
+            <input type="submit" value="Modyfikuj" class="btn btn-success">
+        {% else %}
+            <input type="submit" value="Dodaj" class="btn btn-success">
+        {% endif %}
+
+    {% endif %}
+
+</form>
+
+
+
+
+
+{% endblock %}
+
+<img src='{{ MEDIA_URL }}{{ imagefile }}'>

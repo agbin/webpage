@@ -1,0 +1,94 @@
+{% load static %}
+
+
+<!-- Sidebar -->
+
+    <div id="sidebar-wrapper" style="margin-top: 76px">
+        <ul class="sidebar-nav">
+            <div id="images">
+
+                <img src="{% static 'page/project_about.jpg' %}" id="main_image" style="max-width:100%"/>
+
+                <!--<img src="{% static 'page/trump2.jpg' %}" id="overlay_image" class="p-0 rounded-circle img-thumbnail" width="90" height="90" style="margin-top: -45px; margin-bottom: 20px; margin-left: 72px;">-->
+                <img src="{% static 'page/man1.jpg' %}" id="overlay_image" class="p-0 rounded-circle img-thumbnail" width="90" height="90" style="margin-top: -45px; margin-bottom: 20px; margin-left: 72px;">
+                <!--<img src="{% static 'page/man2.jpg' %}" id="overlay_image" class="p-0 rounded-circle img-thumbnail" width="90" height="90" style="margin-top: -45px; margin-bottom: 20px; margin-left: 72px;">-->
+
+            </div>
+                <p id = "blue">BMB Pracownia Projektowa<br><br>
+                                mgr inż. Marek Bińkowski
+                                projektant instalacji sanitarnych
+
+                </p>
+
+            <li><a href="{% url 'details' %}#partners">
+                    <i class="far fa-handshake"></i>&nbsp;
+                    Partnerzy
+                </a>
+            </li>
+
+
+
+
+            <li>
+                <a href="{% url 'about' %}#comment">
+                    <i class="fas fa-comments"></i>&nbsp;
+                    Piszą o nas/Referencje
+                </a>
+            </li>
+            <li><a href="#">......</a></li>
+
+
+        </ul>
+
+
+
+        <!--Carousel Wrapper-->
+        <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel" style="top: 20%">
+          <div class="carousel-inner" role="listbox">
+            <!--First slide-->
+            <div class="carousel-item active">
+                  <blockquote class="blockquote">
+                  <p style="font-size: 12px; margin: 14px; text-align: right; color: #ddd">
+                    "Gdy jako dwunastoletni chłopiec poznawałem elementarną matematykę, byłem niezmiernie podekscytowany,
+                     widząc, że można dojść do prawdy na drodze samego rozumowania, bez potrzeby przeprowadzania eksperymentu. (…)
+                     Nabierałem coraz większego przekonania, że nawet przyrodę da się ująć w postaci stosunkowo prostej struktury
+                     matematycznej."<br><br>
+                  </p>
+                  <footer class="blockquote-footer" style="margin: 14px; font-size: 22px; text-align: right; color: #ddd">
+                       Albert Einstein
+                  </footer>
+              </blockquote>
+            </div>
+            <!--/First slide-->
+            <!--Second slide-->
+            <div class="carousel-item">
+              <blockquote class="blockquote">
+                  <p style="margin: 14px; text-align: right; color: #ddd">
+                      "Inżynier wie, że osiągnął doskonałość nie wtedy, kiedy nie można nic już dodać, ale kiedy nie można nic już zabrać."<br><br>
+                  </p>
+                  <footer class="blockquote-footer" style="margin: 14px; font-size: 22px; text-align: right; color: #ddd">
+                      Antoine de Saint-Exupéry
+                  </footer>
+              </blockquote>
+            </div>
+            <!--/Second slide-->
+            <!--Third slide-->
+            <div class="carousel-item">
+                <blockquote class="blockquote">
+                  <p style="margin: 14px; text-align: right; color: #ddd">
+                      "Na własnych błędach nauczyłem się jednego: matematyka ma zawsze rację. Ilekroć coś nie wychodziło tak,
+                      jak chciałem, i byłem tym załamany, zawsze w końcu okazywało się, że niechciane rozwiązanie prowadzi
+                      do jeszcze ciekawszych rezultatów. Trzeba dać się prowadzić matematyce i, oczywiście, mieć zawsze w
+                      perspektywie motywację fizyczną, uzasadniającą w ogóle podjęcie całego programu."
+                  </p>
+                  <footer class="blockquote-footer" style="margin: 14px; font-size: 22px; text-align: right; color: #ddd">
+                      Michał Heller
+                  </footer>
+                </blockquote>
+            </div>
+            <!--/Third slide-->
+          </div>
+
+        </div>
+    </div>
+

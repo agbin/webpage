@@ -1,0 +1,1244 @@
+{% extends 'page/base4.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+    <!--<skider>-->
+<div id="page-content-wrapper" style="margin-top: 76px; background: #FBFCFC; font-family: Open Sans; font-weight: 400;">
+    <div class="container-fluid" >
+        <div class="row">
+            <div class="col-12-xl">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin:-10px">
+                    <ol class="carousel-indicators float-right">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <a href="{% url 'about' %}">
+                                <img class="d-block w-100" src="{% static 'page/about3.png' %}" alt="Third slide" style="position: relative">
+                                <span class="" style="position: fixed; height: 1000px; width: 1920px; bottom: -20px; left:-30px; background: linear-gradient(to top, black, black, white); opacity: 0.6;"></span>
+                                <span class="carousel-caption d-none d-md-block" style="position: absolute; opacity: 1; width:70%;">
+                                    <h1 class="text-center img-center" style="color: white;  font-family: -apple-system;">
+                                        O firmie BMB
+                                    </h1>
+                                    <h3 style="position: relative; color: white;">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </h3>
+                                    <div class="p-5 col text-center">
+                                    <button type="button" class="btn btn-warning btn-lg round"><span style="color: white"><b>Więcej</b></span></button><br><br><br>
+
+                                    </div>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="{% url 'offer' %}">
+                                <img class="d-block w-100" src="{% static 'page/offer2.png' %}" alt="Third slide" style="position: relative">
+                                <span class="" style="position: fixed; height: 1000px; width: 1920px; bottom: -20px; left:-30px; background: linear-gradient(to top right, black, #062a69, #0b70ae, white); opacity: 0.5;"></span>
+                                <span class="carousel-caption d-none d-md-block" style="position: absolute; opacity: 1; width:70%;">
+                                    <h1 class="text-center img-center" style="color: white;  font-family: -apple-system;">
+                                        Nasza Oferta
+                                    </h1>
+                                    <h3 style="position: relative; color: white;">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </h3>
+                                    <div class="p-5 col text-center">
+                                    <button type="button" class="btn btn-success btn-lg round"><span style="color: white"><b>Więcej</b></span></button><br><br><br>
+
+                                    </div>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="{% url 'projects' %}">
+                                <img class="d-block w-100" src="{% static 'page/project.png' %}" alt="Third slide">
+                                <span class="" style="position: fixed; height: 1000px; width: 1920px; bottom: -20px; left:-30px; background: linear-gradient(to top right, black, black, #484c03, yellow, #064b99, #9dcbff); opacity: 0.5;)"></span>
+                                <span class="carousel-caption d-none d-md-block" style="position: absolute; opacity: 1; width:70%;">
+                                    <h1 class="text-center img-center" style="color: white;  font-family: -apple-system;">
+                                        Zrealizowane Projekty
+                                    </h1>
+                                    <h3 style="position: relative; color: white;">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </h3>
+                                    <div class="p-5 col text-center">
+                                    <button type="button" class="btn btn-warning btn-lg round"><span style="color: white"><b>Więcej</b></span></button><br><br><br>
+
+                                    </div>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="{% url 'message' %}#first">
+                                <img class="d-block w-100" src="{% static 'page/contact.png' %}" alt="First slide" style="position: relative">
+                                <div class="mask pattern-8 flex-center">
+                                    <span class="" style="position: fixed; height: 1000px; width: 1920px; bottom: -20px; left:-30px; background: linear-gradient(to top, #061e49, #0a337a, #224787, #7a90b7, #BCC7DB); opacity: 0.4;"></span>
+                                    <span class="carousel-caption d-none d-md-block" style="position: absolute; opacity: 1; width:70%;">
+                                    <h1 class="text-center img-center" style="color: white;  font-family: -apple-system;">
+                                        Skontaktuj się z nami
+                                    </h1>
+                                    <h3 style="position: relative; color: white;">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </h3>
+                                    <div class="p-5 col text-center">
+                                    <button type="button" class="btn btn-primary btn-lg round"><span style="color: white"><b>Więcej</b></span></button><br><br><br>
+
+                                    </div>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+
+
+
+                        <div class="carousel-item">
+                            <a href="{% url 'about' %}#message">
+                                <img class="d-block w-100" src="{% static 'page/talk_about.jpg' %}" alt="Second slide" style="position: relative">
+                                <span class="" style="position: fixed; height: 1000px; width: 1920px; bottom: -20px; left:-30px; background: linear-gradient(to top, black, black, green); opacity: 0.5;"></span>
+                                <span class="carousel-caption d-none d-md-block" style="position: absolute; opacity: 1; width:70%;">
+                                    <h1 class="text-center img-center" style="color: white;  font-family: -apple-system;">
+                                        Mówią o Nas
+                                    </h1>
+                                    <h3 style="position: relative; color: white;">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </h3>
+                                    <div class="p-5 col text-center">
+                                    <button type="button" class="btn btn-success btn-lg round"><span style="color: white"><b>Więcej</b></span></button><br><br><br>
+
+                                    </div>
+                                </span>
+                            </a>
+                        </div>
+
+
+
+                    </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                          <!--<i class="fas fa-chevron-circle-right" style="font-size:200%; color: green; "></i>-->
+                        </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div>
+        <div class="container-fluid">
+                    <div class="bg-white" style="margin-left: -30px; margin-right: -30px">
+                        <div style="margin-top: 100px;">
+                            <p class="fa-stack fa-4x">
+                                <i class="fas fa-angle-double-right fa-stack-2x" id="car" data-aos="fade-up-right" style="color: #ffbf00; margin-left: 100px;"></i>
+                            </p>
+                            <span class="spinner-text">
+                                <h2 style="margin-left: 150px; display: inline"><b>Jak możemy Ci pomóc</b></h2><hr id="star" data-aos="fade-left" style="width: 20%; height: 3px; margin-top: -80px; margin-left: 750px; background: #ffbf00; border: 0px; "><br><br>
+                            </span>
+                        </div>
+
+
+                        <div style="margin-left: 150px; margin-right: 150px;">
+
+
+
+                        <!--<span>W Naszej pracowni wykonywane są kompletne projekty budowlane i wykonawcze w następujących działach instalacji sanitarnych:</span><br><br>-->
+
+
+
+                         <!--<div class="container-fluid">-->
+                            <!--<div class="p-3 mb-5 rounded" style="margin-left: -30px; margin-right: -30px; background: #4169E1">-->
+                                <!--<table style="color: #ffbf00; margin-left: 250px; width:60%;">-->
+                                    <!--<tr style=" text-align: center; height: 150px;">-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x text-center">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                                <!--<i class="fas fa-bezier-curve fa-stack-1x" style="color: #4169E1;" ></i>-->
+                                                <!--<p style="font-size: 18px; color: #f2f5fc">sieci wodno kanalizacyjne, gazowe, ciepłownicze</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                        <!--&lt;!&ndash;<td width="25%">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<p class="fa-stack fa-2x">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-water fa-stack-1x" style="color: #4169E1" ></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p style="font-size: 18px; color: #f2f5fc">instalacje sanitarne</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</p>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</td >&ndash;&gt;-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                                <!--<i class="fas fa-braille fa-stack-1x" style="color: #4169E1" ></i>-->
+                                                <!--<p style="font-size: 18px; color: #f2f5fc">instalacje<br>tryskaczowe</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                        <!--&lt;!&ndash;<td width="25%">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<p class="fa-stack fa-2x">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fab fa-cloudsmith fa-stack-1x" style="color: #4169E1" ></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p style="font-size: 18px; color: #f2f5fc"></p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</p>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</td>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<td width="25%">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<p class="fa-stack fa-2x text-center">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-cog fa-stack-1x" style="color: #4169E1;" ></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p style="font-size: 18px; color: #f2f5fc">instalacje sanitarne</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</p>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</td>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<td width="25%">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<p class="fa-stack fa-2x">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fab fa-whmcs fa-stack-1x" style="color: #4169E1" ></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p style="font-size: 18px; color: #f2f5fc">instalacje sanitarne</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</p>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</td >&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<td width="25%">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<p class="fa-stack fa-2x">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-code-branch fa-stack-1x" style="color: #4169E1" ></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p style="font-size: 18px; color: #f2f5fc">instalacje sanitarne</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</p>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</td>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<td width="25%">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<p class="fa-stack fa-2x">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-compress fa-stack-1x" style="color: #4169E1" ></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p style="font-size: 18px; color: #f2f5fc">instalacje sanitarne</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</p>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</td>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+
+
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x text-center">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                                <!--<i class="fas fa-draw-polygon fa-stack-1x" style="color: #4169E1;" ></i>-->
+                                                <!--<p style="font-size: 18px; color: #f2f5fc">instalacje wodno kanalizacyjne</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                        <!--&lt;!&ndash;<td width="25%">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<p class="fa-stack fa-2x">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fab fa-hubspot fa-stack-1x" style="color: #4169E1" ></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p style="font-size: 18px; color: #f2f5fc">instalacje sanitarne</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</p>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</td >&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<tr style=" text-align: center; height: 150px;">&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<td width="25%">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<p class="fa-stack fa-2x">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-expand fa-stack-1x" style="color: #4169E1" ></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p style="font-size: 18px; color: #f2f5fc">instalacje sanitarne</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</p>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</td>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<td width="25%">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<p class="fa-stack fa-2x">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-grip-lines fa-stack-1x" style="color: #4169E1" ></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p style="font-size: 18px; color: #f2f5fc">instalacje sanitarne</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</p>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</td>&ndash;&gt;-->
+                                    <!--</tr>-->
+                                    <!--<tr style=" text-align: center; height: 150px;">-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x text-center">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                                <!--<i class="fab fa-skyatlas fa-stack-1x" style="color: #4169E1;" ></i>-->
+                                                <!--<p style="font-size: 18px; color: #f2f5fc">instalacje wentylacji, klimatyzacji i wentylacji pożarowej</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                        <!--&lt;!&ndash;<td width="25%">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<p class="fa-stack fa-2x">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fab fa-slack-hash fa-stack-1x" style="color: #4169E1" ></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p style="font-size: 18px; color: #f2f5fc">instalacje sanitarne</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</p>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</td >&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<td width="25%">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<p class="fa-stack fa-2x">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-sign fa-stack-1x" style="color: #4169E1" ></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p style="font-size: 18px; color: #f2f5fc">instalacje sanitarne</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</p>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</td>&ndash;&gt;-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                                <!--<i class="fas fa-sliders-h fa-stack-1x" style="color: #4169E1" ></i>-->
+                                                <!--<p style="font-size: 18px; color: #f2f5fc"> instalacje gazowe</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x text-center">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                                <!--<i class="fas fa-smog fa-stack-1x" style="color: #4169E1;" ></i>-->
+                                                <!--<p style="font-size: 18px; color: #f2f5fc"> instalacje ogrzewcze i chłodnicze</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                        <!--</tr>-->
+                                        <!--<tr style=" text-align: center; height: 150px;">-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                                <!--<i class="far fa-snowflake fa-stack-1x" style="color: #4169E1" ></i>-->
+                                                <!--<p style="font-size: 18px; color: #f2f5fc">technologie źródeł ciepła i chłodu</p>-->
+                                            <!--</p>-->
+                                        <!--</td >-->
+                                        <!--&lt;!&ndash;<td width="25%">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<p class="fa-stack fa-2x">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fab fa-squarespace fa-stack-1x" style="color: #4169E1" ></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p style="font-size: 18px; color: #f2f5fc">instalacje sanitarne</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</p>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</td>&ndash;&gt;-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                                <!--<i class="fas fa-wind fa-stack-1x" style="color: #4169E1" ></i>-->
+                                                <!--<p style="font-size: 18px; color: #f2f5fc">instalacje cieplej wody użytkowej</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                    <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<tr style=" text-align: center; height: 150px;">&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<td width="25%">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<p class="fa-stack fa-2x text-center">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-star-of-life fa-stack-1x" style="color: #4169E1;" ></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p style="font-size: 18px; color: #f2f5fc">instalacje sanitarne</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</p>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</td>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<td width="25%">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<p class="fa-stack fa-2x">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-swatchbook fa-stack-1x" style="color: #4169E1" ></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p style="font-size: 18px; color: #f2f5fc">instalacje sanitarne</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</p>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</td >&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<td width="25%">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<p class="fa-stack fa-2x">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="fab fa-usb fa-stack-1x" style="color: #4169E1" ></i>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p style="font-size: 18px; color: #f2f5fc">instalacje sanitarne</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</p>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</td>&ndash;&gt;-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                                <!--<i class="fas fa-vector-square fa-stack-1x" style="color: #4169E1" ></i>-->
+                                                <!--<p style="font-size: 18px; color: #f2f5fc">charakterystyki i certyfikaty energetyczne</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                    <!--</tr>-->
+
+                                <!--</table>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+
+
+
+                        <span>W Naszej pracowni wykonywane są kompletne projekty budowlane i wykonawcze w następujących działach instalacji sanitarnych:</span><br><br>
+
+
+
+                         <div class="container-fluid">
+                            <div class="p-3 mb-5 rounded" style="margin-left: -30px; margin-right: -30px; background: white">
+                                <table style="color: #ffbf00; margin-left: 250px; width:60%;">
+                                    <tr style=" text-align: center; height: 150px;">
+                                        <td width="25%">
+                                            <p class="fa-stack fa-2x text-center">
+                                                <i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>
+                                                <i class="fas fa-bezier-curve fa-stack-1x" style="color: white;" ></i>
+                                                <p style="font-size: 18px; color: black">sieci wodno kanalizacyjne, gazowe, ciepłownicze</p>
+                                            </p>
+                                        </td>
+                                        <td width="25%">
+                                            <p class="fa-stack fa-2x">
+                                                <i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>
+                                                <i class="fas fa-braille fa-stack-1x" style="color: white" ></i>
+                                                <p style="font-size: 18px; color: black">instalacje<br>tryskaczowe</p>
+                                            </p>
+                                        </td>
+                                        <td width="25%">
+                                            <p class="fa-stack fa-2x text-center">
+                                                <i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>
+                                                <i class="fas fa-draw-polygon fa-stack-1x" style="color: white;" ></i>
+                                                <p style="font-size: 18px; color: black">instalacje wodno kanalizacyjne</p>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr style=" text-align: center; height: 150px;">
+                                        <td width="25%">
+                                            <p class="fa-stack fa-2x text-center">
+                                                <i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>
+                                                <i class="fab fa-skyatlas fa-stack-1x" style="color: white;" ></i>
+                                                <p style="font-size: 18px; color: black">instalacje wentylacji, klimatyzacji i wentylacji pożarowej</p>
+                                            </p>
+                                        </td>
+                                        <td width="25%">
+                                            <p class="fa-stack fa-2x">
+                                                <i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>
+                                                <i class="fas fa-sliders-h fa-stack-1x" style="color: white" ></i>
+                                                <p style="font-size: 18px; color: black"> instalacje gazowe</p>
+                                            </p>
+                                        </td>
+
+                                        <td width="25%">
+                                            <p class="fa-stack fa-2x text-center">
+                                                <i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>
+                                                <i class="fas fa-smog fa-stack-1x" style="color: white;" ></i>
+                                                <p style="font-size: 18px; color: black"> instalacje ogrzewcze i chłodnicze</p>
+                                            </p>
+                                        </td>
+                                        </tr>
+                                        <tr style=" text-align: center; height: 150px;">
+                                        <td width="25%">
+                                            <p class="fa-stack fa-2x">
+                                                <i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>
+                                                <i class="far fa-snowflake fa-stack-1x" style="color: white" ></i>
+                                                <p style="font-size: 18px; color: black">technologie źródeł ciepła i chłodu</p>
+                                            </p>
+                                        </td >
+                                        <td width="25%">
+                                            <p class="fa-stack fa-2x">
+                                                <i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>
+                                                <i class="fas fa-wind fa-stack-1x" style="color: white" ></i>
+                                                <p style="font-size: 18px; color: black">instalacje cieplej wody użytkowej</p>
+                                            </p>
+                                        </td>
+                                        <td width="25%">
+                                            <p class="fa-stack fa-2x">
+                                                <i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>
+                                                <i class="fas fa-vector-square fa-stack-1x" style="color: white" ></i>
+                                                <p style="font-size: 18px; color: black">charakterystyki i certyfikaty energetyczne</p>
+                                            </p>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                            <!--<div class="p-3 mb-5 rounded" style="margin-left: -30px; margin-right: -30px; background: white">-->
+                                <!--<table style="color: #ffbf00; margin-left: 250px; width:60%;">-->
+                                    <!--<tr style=" text-align: center; height: 150px;">-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x text-center">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="fas fa-bezier-curve fa-stack-1x" style="color: white;" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+
+                                        <!--</td>-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="far fa-clone fa-stack-1x" style="color: white" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td >-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="fab fa-cloudsmith fa-stack-1x" style="color: white" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="fas fa-cog fa-stack-1x" style="color: white" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                    <!--</tr>-->
+                                    <!--<tr style=" text-align: center; height: 150px;">-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x text-center">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="fas fa-wind fa-stack-1x" style="color: white;" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="fas fa-code-branch fa-stack-1x" style="color: white" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td >-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="fas fa-compress fa-stack-1x" style="color: white" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="fas fa-draw-polygon fa-stack-1x" style="color: white" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                    <!--</tr>-->
+                                    <!--<tr style=" text-align: center; height: 150px;">-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x text-center">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="fab fa-hubspot fa-stack-1x" style="color: white" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="fas fa-expand fa-stack-1x" style="color: white" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td >-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="fas fa-grip-lines fa-stack-1x" style="color: white" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="fab fa-skyatlas fa-stack-1x" style="color: white" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                    <!--</tr>-->
+                                    <!--<tr style=" text-align: center; height: 150px;">-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x text-center">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="fab fa-slack-hash fa-stack-1x" style="color: white" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="fas fa-sign fa-stack-1x" style="color: white" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td >-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="fas fa-sliders-h fa-stack-1x" style="color: white" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="fas fa-smog fa-stack-1x" style="color: white" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                    <!--</tr>-->
+                                    <!--<tr style=" text-align: center; height: 150px;">-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x text-center">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="far fa-snowflake fa-stack-1x" style="color: white" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="fab fa-squarespace fa-stack-1x" style="color: white" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td >-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="fas fa-star-of-life fa-stack-1x" style="color: white" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="fas fa-swatchbook fa-stack-1x" style="color: white" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                    <!--</tr>-->
+                                    <!--<tr style=" text-align: center; height: 150px;">-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x text-center">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="fab fa-usb fa-stack-1x" style="color: white" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="fas fa-vector-square fa-stack-1x" style="color: white" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td >-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="fas fa-water fa-stack-1x" style="color: white" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                        <!--<td width="25%">-->
+                                            <!--<p class="fa-stack fa-2x">-->
+                                                <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                                <!--<i class="fab fa-whmcs fa-stack-1x" style="color: white" ></i>-->
+                                                <!--<p style="font-size: 18px; color: black">instalacje sanitarne</p>-->
+                                            <!--</p>-->
+                                        <!--</td>-->
+                                    <!--</tr>-->
+
+                                <!--</table>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+
+           <!--tekst w tej samej lini   -->
+
+
+                            <div class="p-3 mb-5 rounded" style="margin-left: -30px; margin-right: -30px; background: white">
+                                <table style="color: #ffbf00; margin-left: 180px; width:80%;">
+                                    <tr style=" text-align: center; ">
+                                        <td width="50%">
+                                            <p class="fa-stack fa-2x text-center">
+                                                <i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>
+                                                <i class="fas fa-bezier-curve fa-stack-1x" style="color: white;" ></i>
+                                            </p>
+
+                                             <span class="spinner-text" style="margin-top: -20px; line-height:-20px">INSTALACJE CENTRALNEGO OGRZEWANIA</span>
+
+                                        </td>
+                                        <td width="50%">
+                                            <p class="fa-stack fa-2x">
+                                                <i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>
+                                                <i class="far fa-clone fa-stack-1x" style="color: white" ></i>
+                                            </p>
+                                            <span class="spinner-text" style="margin-top: -20px">INSTALACJE CENTRALNEGO OGRZEWANIA</span>
+                                        </td >
+                                    </tr>
+                                    <tr style=" text-align: center; height: 150px;">
+                                        <td width="50%">
+                                            <p class="fa-stack fa-2x">
+                                                <i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>
+                                                <i class="fab fa-cloudsmith fa-stack-1x" style="color: white" ></i>
+                                            </p>
+                                            <span class="spinner-text" style="margin-top: -20px">INSTALACJE CENTRALNEGO OGRZEWANIA</span>
+                                        </td>
+                                        <td width="50%">
+                                            <p class="fa-stack fa-2x">
+                                                <i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>
+                                                <i class="fas fa-cog fa-stack-1x" style="color: white" ></i>
+                                            </p>
+                                            <span class="spinner-text" style="margin-top: -20px">INSTALACJE CENTRALNEGO OGRZEWANIA</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!--<div class="row">-->
+                            <!--<div class="col-sm" style="width: 25%">1 of 4</div>-->
+                            <!--<ol class="fa-ul">-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="far fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                        <!--<i class="fas fa-bezier-curve fa-stack-1x" style="color: #4169E1" ></i>-->
+                                 <!--</p>-->
+                                <!--<span class="spinner-text" style="margin-top: -20px">INSTALACJE CENTRALNEGO OGRZEWANIA</span>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="far fa-circle fa-stack-2x" style="color: #ffbf00"></i>-->
+                                        <!--<i class="fas fa-bezier-curve fa-stack-1x" style="color: #4169E1" ></i>-->
+                                 <!--</p>-->
+                                <!--<span class="spinner-text">PROJEKTY WĘZŁÓW CIEPŁOWNICZYCH</span>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="far fa-circle fa-stack-2x" style="color: #ffbf00; "></i>-->
+                                        <!--<i class="fab fa-bity fa-stack-1x" style="color: #4169E1" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1; "></i>-->
+                                        <!--<i class="far fa-clone fa-stack-1x" style="color: white" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                        <!--<i class="fab fa-cloudsmith  fa-stack-1x" style="color: white" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                        <!--<i class="fas fa-cog fa-stack-1x" style="color: white" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                        <!--<i class="fas fa-cogs fa-stack-1x" style="color: white" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                        <!--<i class="fas fa-code-branch fa-stack-1x" style="color: white" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                            <!--</ol>-->
+                            <!--<div class="col-sm" style="width: 25%">1 of 4</div>-->
+                            <!--<ol class="fa-ul">-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #4169E1"></i>-->
+                                        <!--<i class="fas fa-compress fa-stack-1x" style="color: white" ></i>-->
+                                 <!--</p>-->
+                                 <!--<span class="spinner-text">INSTALACJE KLIMATYZACJI</span>-->
+
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                        <!--<i class="fas fa-draw-polygon fa-stack-1x" style="color: #4169E1" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                        <!--<i class="fab fa-hubspot fa-stack-1x" style="color: black" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                        <!--<i class="fas fa-expand fa-stack-1x" style="color: black" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                        <!--<i class="fas fa-grip-lines fa-stack-1x" style="color: black" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                        <!--<i class="fab fa-skyatlas fa-stack-1x" style="color: black" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                        <!--<i class="fab fa-slack-hash fa-stack-1x" style="color: black" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                            <!--</ol>-->
+                            <!--<div class="col-sm" style="width: 25%">1 of 4</div>-->
+                            <!--<ol class="fa-ul">-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                        <!--<i class="fas fa-sign fa-stack-1x" style="color: black" ></i>-->
+                                 <!--</p>-->
+                                <!--<span class="spinner-text">Please wait while we gather data from ...</span>-->
+
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                        <!--<i class="fas fa-sliders-h fa-stack-1x" style="color: black" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                        <!--<i class="fas fa-smog fa-stack-1x" style="color: black" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                        <!--<i class="far fa-snowflake fa-stack-1x" style="color: black" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                        <!--<i class="fab fa-squarespace fa-stack-1x" style="color: black" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                        <!--<i class="fab fa-staylinked fa-stack-1x" style="color: black" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                        <!--<i class="fas fa-star-of-life fa-stack-1x" style="color: black" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                        <!--<i class="fas fa-swatchbook fa-stack-1x" style="color: black" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                        <!--<i class="fab fa-usb fa-stack-1x" style="color: black" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                        <!--<i class="fas fa-vector-square fa-stack-1x" style="color: black" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                        <!--<i class="fas fa-water fa-stack-1x" style="color: black" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                        <!--<i class="fab fa-whmcs fa-stack-1x" style="color: black" ></i>-->
+                                 <!--</p>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="fa-stack fa-2x list">-->
+                                        <!--<i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>-->
+                                        <!--<i class="fas fa-wind fa-stack-1x" style="color: black" ></i>-->
+                                <!--</p>-->
+                            <!--</ol>-->
+                            <!--<div class="col-sm" style="width: 25%">1 of 4</div>-->
+
+
+
+
+
+
+
+                        </div><br><br>
+                        <div class="text-center">
+                            <a href="{% url 'offer' %}#investor" class="shadow mb-5 man" style="display: inline-block; border-radius: 15px; width: 250px; height: 180px; margin-left: 28px; text-align: center; "><br><br>
+                                <!--<img src="{% static 'page/investor.png' %}" class="img-fluid man" style="margin-top: -30px; background-color: orange">-->
+                                <i class="fas fa-user-tie fa-3x"></i>
+                                <i class="fas fa-money-bill-wave fa-2x"></i><br>
+                                <span class="" style="font-family: Satisfy; font-size: 24px; color: #212121; line-height:50px"> Inwestor</span>
+                            </a>
+                            <a href="{% url 'offer' %}#architect" class="shadow mb-5 man" style="display: inline-block; border-radius: 15px; width: 250px; height: 180px; margin-left: 28px; text-align: center"><br><br>
+                                <!--<a href="#"><img src="{% static 'page/man.png' %}" class="img-fluid man" alt="" style="margin-top: -30px"></a>-->
+                                <i class="fas fa-user-edit fa-3x"></i>
+                                <i class="fas fa-drafting-compass fa-3x"></i><br>
+                                <!--<i class="fab fa-asymmetrik fa-3x" style="margin-top: -30px"></i><br>-->
+                                <span class="" style="font-family: Satisfy; font-size: 24px; color: #212121; line-height:50px">Architekt</span>
+                            </a>
+                            <a href="{% url 'offer' %}#performer" class="shadow mb-5 man" style="display: inline-block; border-radius: 15px; width: 250px; height: 180px; margin-left: 28px; text-align: center;"><br><br>
+                                <!--<img src="{% static 'page/man.png' %}" class="img-fluid" alt="" style="margin-top: -30px; padding-left: -60px">-->
+                                <i class="fas fa-user-ninja fa-3x"></i>
+                                <i class="far fa-building fa-3x" style="margin-top: -60px"> </i><br>
+                                <span class="" style="font-family: Satisfy; font-size: 24px; color: #212121; line-height:50px">Wykonawca</span>
+
+                            </a>
+                            <a href="{% url 'offer' %}#individual" class="shadow mb-5 man" style="display: inline-block; border-radius: 15px; width: 250px; height: 180px; margin-left: 28px; text-align: center"><br><br>
+                                <!--<img src="{% static 'page/client.png' %}" class="img-fluid man man" alt="" style="margin-top: -30px">-->
+                                <i class="fas fa-user-astronaut fa-3x"></i>&nbsp;&nbsp;
+                                <span class="" style="font-family: Satisfy; font-size: 24px; color: #212121; line-height:30px">Klient<br>Indywidualny</span>
+                            </a>
+                            <div class="col text-center">
+                        <a href="{% url 'offer' %}"><button type="button" class="btn btn-outline-warning btn-lg round">Pełna Oferta</button></a><br>
+                        <button class="btn-hover color-2">BUTTON</button>
+                         <button class="btn-hover color-3">BUTTON</button>
+                         <button class="btn peach-gradient">Peach</button>
+                            </div>
+                        </div><br><br>
+
+                    </div>
+        </div>
+
+        <div class="view img responsive" style="margin-bottom: 70px;">
+            <img class="about-list-image" src="{% static 'page/about3_mask.png' %}" class="img-fluid" alt="">
+            <img class="about-list-image" src="{% static 'page/system.jpg' %}" alt="" style="opacity: 0.3; margin-top: -33%">
+        </div>
+
+
+
+
+
+
+
+           <div class="container-fluid" style=" background: #FBFCFC">
+            <div class="p-3 mb-5 bg-white rounded" style="margin-left: -30px; margin-right: -30px;">
+                <table style="color: #ffbf00; margin-left: 250px; width:60%;">
+                    <tr style=" text-align: center; height: 150px;">
+                        <td width="25%">
+                            <p class="fa-stack fa-4x text-center">
+                                <i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>
+                                <i class="fas fa-project-diagram fa-stack-1x" style="color: black;" ></i>
+                            </p>
+                        </td>
+                        <td width="25%">
+                            <p class="fa-stack fa-4x">
+                                <i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>
+                                <i class="fas fa-history fa-stack-1x" style="color: black" ></i>
+                            </p>
+                        </td >
+                        <td width="25%">
+                            <p class="fa-stack fa-4x">
+                                <i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>
+                                <i class="fas fa-cogs fa-stack-1x" style="color: black" ></i>
+                            </p>
+                        </td>
+                        <td width="25%">
+                            <p class="fa-stack fa-4x">
+                                <i class="fas fa-circle fa-stack-2x" style="color: #ffd980"></i>
+                                <i class="fas fa-users fa-stack-1x" style="color: black" ></i>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height: 150px; width: 100px; font-size: 20px; color:black;">
+                        <td class="text-center"><b style="font-size:50px">100</b><br>zakończonych<br>projektów</td>
+                        <td class="text-center"><b style="font-size:50px">21 lat</b><br>funkcjonowania<br>firmy</td>
+                        <td class="text-center"><b style="font-size:50px">38 lat</b><br>doświadczenia<br>w branży</td>
+                        <td class="text-center"><b style="font-size:50px">99%</b><br>zleceniodawców<br>wraca do nas</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <p class="fa-stack fa-4x">
+                <i class="fas fa-angle-double-right fa-stack-2x" id="apple" data-aos="fade-up-right" style="color: #ffbf00; margin-left: 100px;"></i>
+            </p>
+            <span class="spinner-text">
+                <h2 style="margin-left: 150px; display: inline; font-family: Open Sans; font-weight: 400;"><b>Kim jesteśmy</b></h2><hr id="pie" data-aos="fade-left" style="width: 20%; height: 3px; margin-top: -80px; margin-left: 630px; background: #ffbf00; border: 0px; "><br><br>
+            </span>
+
+
+
+
+
+
+
+
+
+
+                            <p style="margin-left: 100px; margin-right: 100px; font-family: Open Sans">
+
+                                fghfhfhfhfffhgfhgfhgfhfhgfhgfhfhgfhg
+                                jhgjghkgjkhgjgjgkgkjgggjjghgkjhg
+                                gjhkgjghjghgjghggkjghjghjhkgkgjgjghkjgjjjjjjjjjjjjjjjjjjjjjjjj
+                                jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+                                nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+                                nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+                                bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+                                jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+                                lllllllllllllllllllllllllllllllllllllllllllllllllllll
+                                kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+                                oooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+                                ppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+
+                            </p>
+                        <div class="p-5 col text-center">
+                            <button type="button" class="btn btn-warning btn-lg round">Więcej</button><br><br><br>
+
+                        </div>
+                    </div>
+                    <div style="color: white; text-align: center; height: 350px; background: #2c3e50; margin-top:-50px; margin-left: -30px; margin-right: -30px">
+                    <!--<div style="color: white; text-align: center; height: 300px; background: #2b2c37; margin-top:-50px; margin-left: -30px; margin-right: -30px">-->
+                        <br><br><i class="far fa-comment-dots fa-3x"></i><br><br><br>"BMB to bardzo dobra, profesjonalna firma. Projekty instalacji sanitarnych spełniają wymagania"<br>
+                    <b>Kinecka</b><br><br><br>
+                    <button class="btn-hover color-3">Wszystkie referencje</button>
+
+                    </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="row">
+      <div class="shadow p-3 mb-5 bg-white rounded" style="">
+          <div style="margin-top: 80px; margin-bottom: 50px">
+              <p class="fa-stack fa-4x">
+                    <i class="fas fa-angle-double-right fa-stack-2x" data-aos="fade-up-right" style="color: #ffbf00; margin-left: 100px;"></i>
+              </p>
+              <span class="spinner-text">
+                    <h2 style="margin-left: 150px; display: inline"><b>Przykładowe zrealizowane projekty</b></h2><hr data-aos="fade-left" style="width: 20%; height: 3px; margin-top: -80px; margin-left: 900px; background: #ffbf00; border: 0px; "><br><br>
+              </span>
+          </div>
+
+
+
+          <div class="about-list img responsive">
+              <img class="about-list-image" src="{% static 'page/wizualizacja1.jpg' %}" alt="">
+              <img class="about-list-image" src="{% static 'page/wizualizacja2.jpg' %}" alt="">
+              <img class="about-list-image" src="{% static 'page/wizualizacja3.jpg' %}" alt="">
+          </div>
+          <div class="p-5 col text-center">
+              <button type="button" class="btn btn-outline-warning">Więcej</button><br>
+          </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="row">
+        <!--<div class="col-sm-3 col-md-6">-->
+          <div class="shadow p-3 mb-5  rounded" style="width: 60%; margin-left: 20%;  background-color: #ffbb33; ">
+              <a href="message"><img src="{% static 'page/enlarge.png' %}" style="max-width:2%; float:right"/></a><br>
+
+              <p class="fa-stack fa-4x">
+                    <i class="fas fa-angle-double-right fa-stack-2x" data-aos="fade-up-right" style="color: #0094cc; margin-left: 100px;"></i>
+              </p>
+              <span class="spinner-text">
+                  <h2 style="margin-top: -100px; text-align: center; color: white; font-size: 40px"><b>Szybki kontakt</b></h2><br><br>
+                  <hr align="center" data-aos="fade-left" style="width: 10%; height: 3px; margin-top: -25px; background: #0094cc; border: 0px;"><br><br>
+              </span>
+
+
+              <form action="contact" method="post" style="">{% csrf_token %}
+                {{ contactform.as_p }}
+              <div class="col text-center">
+                    <input type="submit" class="btn btn-outline-primary" value="Wduś guzik"></button><br><br>
+                    <input type="submit" class="btn btn-outline-primary btn-lg round" value="Wduś guzik"></button><br>
+              </div>
+                <!--<input type="submit" value="Wduś guzik" class="btn btn-success btn-md">-->
+              </form><br>
+          </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--<div class="row" style="">-->
+        <!--<div class="col-12">-->
+            <!--&lt;!&ndash;<div class="partners" style="background: #cce6ff; height: 350px"><br>&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="partners" style="background: #e5eef4 ; height: 550px; "><br>&ndash;&gt;-->
+            <!--<div class="partners" style="background: #d8e1ee ; height: 600px; margin-left:-15px; margin-right:-15px; margin-bottom: -33px "><br>-->
+                <!--&lt;!&ndash;<h3 class="text-center" id="partners" style="color: #003366">Nasi partnerzy</h3><br><br>&ndash;&gt;-->
+                          <!--<h2 style="margin-top: 50px; margin-left: 100px"><b>Nasi Partnerzy</b></h2><hr style="width: 20%; height: 3px; margin-top: -25px; margin-left: 400px; background: #ffbf00; border: 0px;"><br><br>-->
+
+                <!--<div class="marquee">-->
+
+                    <!--<a href="http://www.atrio-architekci.pl/"><span class="shadow mb-5 partner" style=""><img src=""><br><br><br><br>Paweł Rzepecki<br>Architekt</span></a>-->
+                    <!--<a href="http://www.kubit.net/"><span class="shadow mb-5 partner" style=""><img src="{% static 'page/logo_kubit.jpg' %}" style="width: 100px; margin-top: -5px"><br><br>Ewa Kinecka<br>Architekt</span></a>-->
+                    <!--<a href="http://www.majchrzakpp.com.pl/"><span class="shadow mb-5 partner" style=""><img src="{% static 'page/logo_majchrzak.png' %}" style="width: 150px"><br><br>Renata Majchrzak<br>Architekt</span></a>-->
+                    <!--<a href="http://www.atrio-architekci.pl/"><span class="shadow mb-5 partner" style="">Ligaszewski <br></span></a>-->
+                    <!--<a href="http://www.atrio-architekci.pl/"><span class="shadow mb-5 partner" style="">Rzepecki <br></span></a>-->
+                    <!--<a href="http://www.atrio-architekci.pl/"><span class="shadow mb-5 partner" style="">Cichoń<br></span></a>-->
+                    <!--<span class="shadow mb-5 partner" style=""><br><br> Mioduszewska <br></span>-->
+                    <!--<span class="shadow mb-5 partner" style=""><br>Ubis<br> Urszula Battek <br></span>-->
+                    <!--<span class="shadow mb-5 partner" style=""><br><br> Edziu <br></span>-->
+                    <!--<span class="shadow mb-5 partner" style=""><br><br> Edziu <br></span>-->
+                    <!--<span class="shadow mb-5 partner" style=""><br><br> Edziu <br></span>-->
+                    <!--<span class="shadow mb-5 partner" style=""><br><br> Edziu <br></span>-->
+                    <!--<span class="shadow mb-5 partner" style=""><br><br> Edziu <br></span>-->
+                    <!--<span class="shadow mb-5 partner" style=""><br><br> Edziu <br></span>-->
+                    <!--<span class="shadow mb-5 partner" style=""><br><br> Edziu <br></span>-->
+
+                <!--</div><br>-->
+                <!--<div class="col text-center">-->
+                    <!--<button type="button" class="btn btn-outline-warning btn-lg">Więcej</button><br>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div><br>-->
+
+
+
+    <div class="row" style="">
+        <div class="col-12">
+            <!--<div class="partners" style="background: #cce6ff; height: 350px"><br>-->
+            <!--<div class="partners" style="background: #e5eef4 ; height: 550px; "><br>-->
+            <div class="partners" style="background: #d8e1ee ; height: 600px; margin-left:-15px; margin-right:-15px; margin-bottom: -33px "><br>
+                <!--<h3 class="text-center" id="partners" style="color: #003366">Nasi partnerzy</h3><br><br>-->
+                          <!--<h2 style="margin-top: 50px; margin-left: 100px"><b>Nasi Partnerzy</b></h2><hr style="width: 20%; height: 3px; margin-top: -25px; margin-left: 400px; background: #ffbf00; border: 0px;"><br><br>-->
+                            <p class="fa-stack fa-4x">
+                                <i class="fas fa-angle-double-right fa-stack-2x" id="car" data-aos="fade-up-right" style="color: #ffbf00; margin-left: 100px;"></i>
+                            </p>
+                            <span class="spinner-text">
+                                <h2 style="margin-left: 150px; display: inline"><b>Nasi Partnerzy</b></h2><hr id="star" data-aos="fade-left" style="width: 20%; height: 3px; margin-top: -80px; margin-left: 600px; background: #ffbf00; border: 0px; "><br><br>
+                            </span>
+
+                <div class="marquee">
+
+                    <a href="http://www.atrio-architekci.pl/"><span class="shadow mb-5 partner" style=""><img src=""><br><br><br><br>Paweł Rzepecki<br>Architekt</span></a>
+                    <a href="http://www.kubit.net/"><span class="shadow mb-5 partner" style=""><img src="{% static 'page/logo_kubit.jpg' %}" style="width: 100px; margin-top: -5px"><br><br>Ewa Kinecka<br>Architekt</span></a>
+                    <a href="http://www.majchrzakpp.com.pl/"><span class="shadow mb-5 partner" style=""><img src="{% static 'page/logo_majchrzak.png' %}" style="width: 150px"><br><br>Renata Majchrzak<br>Architekt</span></a>
+                    <a href="http://www.atrio-architekci.pl/"><span class="shadow mb-5 partner" style="">Ligaszewski <br></span></a>
+                    <a href="http://www.atrio-architekci.pl/"><span class="shadow mb-5 partner" style="">Rzepecki <br></span></a>
+                    <a href="http://www.atrio-architekci.pl/"><span class="shadow mb-5 partner" style="">Cichoń<br></span></a>
+                    <span class="shadow mb-5 partner" style=""><br><br> Mioduszewska <br></span>
+                    <span class="shadow mb-5 partner" style=""><br>Ubis<br> Urszula Battek <br></span>
+                    <span class="shadow mb-5 partner" style=""><br><br> Edziu <br></span>
+                    <span class="shadow mb-5 partner" style=""><br><br> Edziu <br></span>
+                    <span class="shadow mb-5 partner" style=""><br><br> Edziu <br></span>
+                    <span class="shadow mb-5 partner" style=""><br><br> Edziu <br></span>
+                    <span class="shadow mb-5 partner" style=""><br><br> Edziu <br></span>
+                    <span class="shadow mb-5 partner" style=""><br><br> Edziu <br></span>
+                    <span class="shadow mb-5 partner" style=""><br><br> Edziu <br></span>
+
+                </div><br>
+                <div class="col text-center">
+                    <button type="button" class="btn btn-outline-warning btn-lg">Zobacz Listę</button><br>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<!--#a3d1ff-->
+<!--#ADD8E6-->
+{% endblock %}

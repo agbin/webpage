@@ -1,0 +1,187 @@
+
+{% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-dark py-md-0 fixed-top" style="background-color: 	 rgba(0,77,136, 0.9);">
+<!--<nav class="navbar navbar-expand-lg navbar-dark py-md-0 fixed-top" style="background-color: 	 #005c99">-->
+  <a class="navbar-brand" href="#">
+
+      <!-- Sidebar toggle button -->
+      <label type="" class="container_toogle" id="menu-toggle" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+      </label>
+  </a>
+
+
+  <!-- Logo -->
+  <a class="navbar-brand" href="{% url 'details' %}">
+
+      <!--<span class="btn btn-info" href="#" style="">-->
+          <!--<i class="fas fa-monument fa-1x" id="logoIcon" style="color:white;" ></i>-->
+      <!--</span>-->
+      <!--<span class="btn btn-success" href="#" style="">-->
+          <!--<i class="fa fa-chevron-up fa-rotate-90" style="color:white;" ></i>-->
+      <!--</span>-->
+
+
+    <p class="fa-stack">
+        <i class="fa fa-square fa-stack-2x" id="logoIcon"></i>
+        <i class="fa fa-chevron-up fa-rotate-90 fa-stack-1x" id="logoIconB"></i>
+    </p>
+
+    <span id="logo"> BMB </span>Pracownia Projektowa
+  </a>
+
+  <!-- toggle button - navbar -->
+  <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle n-->
+    <!--<span class="navbar-toggler-icon"></span>-->
+  <!--</button>-->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- navbar items -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class=" nav navbar-nav ml-auto bar-item" id="bar">
+          <li class="nav-item active"><a class="nav-link" href="{% url 'details' %}"><i class="fas fa-home fa-2x"></i><br>Główna<span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" id="a" href="{% url 'about' %}"><span class="fas-stack"><i class="fas fa-user-alt fas-stack-2x fa-2x"></i><i class="fas fa-info fas-stack-1x"></i></span><br>O nas</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-th-list fa-2x"></i><br>
+                Oferta</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background: #005c99;">
+                  <a class="dropdown-item" href="{% url 'offer' %}#investor" style="text-align: left">Oferta dla Inwestora</a>
+                  <a class="dropdown-item" href="{% url 'offer' %}#architect" style="text-align: left">Oferta dla Architekta</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="{% url 'offer' %}#performer" style="text-align: left">Oferta dla Wykonawcy</a>
+                  <a class="dropdown-item" href="{% url 'offer' %}#individual" style="text-align: left">Oferta dla Klienta Indywidualnego</a>
+              </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="{% url 'projects' %}"><i class="fas fa-suitcase fa-2x"></i><br>Projekty</a></li>
+          <li class="nav-item"><a class="nav-link" href="{% url 'references' %}"><i class="fas fa-scroll fa-2x"></i><br>Referencje</a></li>
+          <li class="nav-item"><a class="nav-link" href="{% url 'message' %}"><i class="fas fa-globe fa-2x"></i><br>Kontakt</a></li>
+      </ul>
+    <form method="GET" action="{% url 'search' %}" class="form-search form-inlin" style="margin-left: 150px;">
+
+      <!--<div class="input-group mb-3">-->
+
+          <!--<input class="form-control" type="search" placeholder="Szukaj" aria-label="Search">-->
+          <!--<div class="input-group-append"  id="search">-->
+            <!--<button class="btn btn-outline-success" type="submit"><img src="{% static 'page/search.png' %}"></button>-->
+          <!--</div>-->
+      <!--</div>-->
+      <div class="input-group mb-3" style="top:15px">
+
+          <input class="form-control form-rounded" type="search" placeholder="Szukaj" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-outline-success form-rounded" type="submit"><i class="fa fa-search"></i></button>
+          </div>
+      </div>
+
+    </form>
+
+      <!--<div class="input-group mb-3">-->
+      <!--<div class="input-group-prepend">-->
+        <!--<button class="btn btn-outline-primary" type="button">Basic Button</button>-->
+          <!--</div>-->
+          <!--<input type="text" class="form-control" placeholder="Some text">-->
+        <!--</div>-->
+
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+<!--<nav class="navbar navbar-expand-lg navbar-dark py-md-0" style="background-color: 	 #005c99; ">-->
+  <!--<a class="navbar-brand" href="#">-->
+
+      <!--&lt;!&ndash; Sidebar toggle button &ndash;&gt;-->
+      <!--<label type="" class="container_toogle" id="menu-toggle" onclick="myFunction(this)">-->
+            <!--<div class="bar1"></div>-->
+            <!--<div class="bar2"></div>-->
+            <!--<div class="bar3"></div>-->
+      <!--</label>-->
+  <!--</a>-->
+
+
+  <!--&lt;!&ndash; Logo &ndash;&gt;-->
+  <!--<a class="navbar-brand" href="{% url 'details' %}">-->
+    <!--<p class="fa-stack">-->
+        <!--<i class="fa fa-square fa-stack-2x" id="logoIcon"></i>-->
+        <!--<i class="fa fa-chevron-up fa-rotate-90 fa-stack-1x" id="logoIconB"></i>-->
+    <!--</p>-->
+    <!--<span id="logo"> BMB </span>Pracownia Projektowa-->
+  <!--</a>-->
+
+  <!--&lt;!&ndash; toggle button - navbar &ndash;&gt;-->
+  <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle n-->
+    <!--<span class="navbar-toggler-icon"></span>-->
+  <!--</button>-->
+
+  <!--&lt;!&ndash; navbar items &ndash;&gt;-->
+
+      <!--<ul class="nav nav-pills" id="bar" role="tablist" style="font-size: 12px">-->
+          <!--<li class="nav-item active">-->
+            <!--<a class="nav-link" id="home" href="{% url 'details' %}" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-home fa-2x"></i><br> Główna</a>-->
+          <!--</li>-->
+          <!--<li class="nav-item">-->
+            <!--<a class="nav-link" id="about" href="{% url 'about' %}" role="tab" aria-controls="pills-profile" aria-selected="false"><span class="fas-stack">-->
+                <!--<i class="fas fa-user-alt fas-stack-2x fa-2x"></i>-->
+
+                <!--<i class="fas fa-info fas-stack-1x"></i>-->
+            <!--</span><br>-->
+            <!--O nas-->
+            <!--</a>-->
+          <!--</li>-->
+
+          <!--<li class="dropdown">-->
+
+            <!--<a class="dropdown-toggle" id="offer" data-toggle="dropdown" href="#" role="tab" aria-controls="pills-contact" aria-selected="false">Oferta</a>-->
+            <!--<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background: #005c99;">-->
+              <!--<a class="dropdown-item" href="{% url 'offer' %}#investor" style="text-align: left">Oferta dla Inwestora</a>-->
+              <!--<a class="dropdown-item" href="{% url 'offer' %}#architect" style="text-align: left">Oferta dla Architekta</a>-->
+              <!--<div class="dropdown-divider"></div>-->
+              <!--<a class="dropdown-item" href="{% url 'offer' %}#performer" style="text-align: left">Oferta dla Wykonawcy</a>-->
+              <!--<a class="dropdown-item" href="{% url 'offer' %}#individual" style="text-align: left">Oferta dla Klienta Indywidualnego</a>-->
+            <!--</div>-->
+
+          <!--</li>-->
+
+
+
+          <!--<li class="nav-item">-->
+            <!--<a class="nav-link" id="project" data-toggle="pill" href="#" role="tab" aria-controls="pills-contact" aria-selected="false">Projekty</a>-->
+          <!--</li>-->
+          <!--<li class="nav-item">-->
+            <!--<a class="nav-link" id="references" data-toggle="pill" href="#" role="tab" aria-controls="pills-contact" aria-selected="false">Referencje</a>-->
+          <!--</li>-->
+          <!--<li class="nav-itemn">-->
+            <!--<a class="nav-link" id="contact" data-toggle="pill" href="#" role="tab" aria-controls="pills-contact" aria-selected="false">Kontakt</a>-->
+          <!--</li>-->
+
+
+      <!--</ul>-->
+        <!--&lt;!&ndash;<div class="tab-content" id="pills-tabContent">&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="tab-pane fade show active" id="{% url 'projects' %}" role="tabpanel" aria-labelledby="pills-home-tab">...</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+
+    <!--<form method="GET" action="{% url 'search' %}" class="form-inline my-2 my-lg-0" style="margin-left: 150px;">-->
+      <!--<input class="form-control mr-sm-2" type="search" placeholder="Szukaj" aria-label="Search">-->
+      <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Szukaj</button>-->
+    <!--</form>-->
+  <!--</div>-->
+<!--</nav>-->
+
+
+
+
+
+

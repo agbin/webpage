@@ -1,0 +1,186 @@
+<!--{% load static %}-->
+
+<!--<html>-->
+<!--<head>-->
+    <!--<title>web page</title>-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">-->
+    <!--&lt;!&ndash;<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">&ndash;&gt;-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
+    <!--<link rel="stylesheet" href="{% static 'page/style.css' %}">-->
+    <!--<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Satisfy" />-->
+    <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+<!--</head>-->
+
+
+
+<!--<body>-->
+
+    <!--<nav class="navbar navbar-default navbar-fixed-top">-->
+    <!--&lt;!&ndash;<nav class="navbar navbar-light blue">&ndash;&gt;-->
+        <!--<div class="container-fluid">-->
+
+    <!--&lt;!&ndash; Logo &ndash;&gt;-->
+        <!--<div class="row" style="margin-top: 5px; ">-->
+            <!--&lt;!&ndash;<div class="col-md-2">&ndash;&gt;-->
+                <!--&lt;!&ndash;<a href="#" class="navbar-brand"><span><b>BMB</b>Pracownia Projektowa</span></a>&ndash;&gt;-->
+                <!--<div class="navbar-header">-->
+
+                <!--&lt;!&ndash; Sidebar toggle button &ndash;&gt;-->
+                <!--<label class="hamburger" type="button" class="btn btn-default navbar-btn container" id="menu-toggle" onclick="myFunction(this)" style="border-radius: 50px; border: white; background: white; size: 70%; display: inline-block;">-->
+                      <!--<div class="bar1"></div>-->
+                      <!--<div class="bar2"></div>-->
+                      <!--<div class="bar3"></div>-->
+                <!--</label>-->
+                <!--</div>-->
+
+
+                <!--<input type="checkbox" id="navbar-toggle-cbox" style="visibility: hidden; display: inline-block;">-->
+                <!--<div class="navbar-header">-->
+                  <!--<label for="navbar-toggle-cbox" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">-->
+                    <!--<span class="sr-only">Toggle navigation</span>-->
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                  <!--</label>-->
+                  <!--<a class="navbar-brand" href="#"><span><b>BMB</b>Pracownia Projektowa</span></a>-->
+                <!--</div>-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="col-md-4">&ndash;&gt;-->
+            <!--<div id="navbar" class="navbar-collapse collapse">-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!--&lt;!&ndash;<div class="col-md-4">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<a href="#" class="navbar-brand"><span><b>BMB</b>Pracownia Projektowa</span></a>&ndash;&gt;-->
+
+
+                    <!--&lt;!&ndash;&lt;!&ndash; Sidebar toggle button &ndash;&gt;&ndash;&gt;-->
+                    <!--&lt;!&ndash;<label class="hamburger" type="button" class="btn btn-default navbar-btn container" id="menu-toggle" onclick="myFunction(this)" style="border-radius: 50px; border: white; background: white; size: 70%;">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<div class="bar1"></div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<div class="bar2"></div>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<div class="bar3"></div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</label>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+
+                    <!--&lt;!&ndash; Menu Items &ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="col-md-4">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="collapse navbar-collapse" id="#myNavBar">&ndash;&gt;-->
+
+
+                        <!--<ul class="nav navbar-nav">-->
+                            <!--<li class="active"><a href="#">Home</a></li>-->
+                            <!--<li class=""><a href="#">About</a></li>-->
+                            <!--<li class=""><a href="#">Contact</a></li>-->
+
+                            <!--&lt;!&ndash; drop down menu &ndash;&gt;-->
+                            <!--<li class="dropdown">-->
+                                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">My<span class="caret"></span></a>-->
+                                <!--<ul class="dropdown-menu">-->
+                                    <!--<li class=""><a href="#">Contact</a></li>-->
+                                    <!--<li class=""><a href="#">Contact</a></li>-->
+                                    <!--<li class=""><a href="#">Contact</a></li>-->
+                                <!--</ul>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+
+
+
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="col-md-2">&ndash;&gt;-->
+
+
+                    <!--<div class="navbar-nav">-->
+                        <!--&lt;!&ndash; right align &ndash;&gt;-->
+                        <!--<ul class="navbar-nav navbar-right">-->
+                            <!--<li><a href="#">Logout</a></li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</nav>-->
+    <!--<div id="wrapper">-->
+
+        <!--&lt;!&ndash; Sidebar &ndash;&gt;-->
+        <!--<div id="sidebar-wrapper">-->
+            <!--<ul class="sidebar-nav">-->
+                <!--<img src="..." alt="..." class="rounded-bottom">-->
+                <!--<li><a href="#">Account</a></li>-->
+                <!--<li><a href="#">Settings</a></li>-->
+                <!--<li><a href="#">Logout</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash; Page content &ndash;&gt;-->
+        <!--<div id="page-content-wrapper">-->
+            <!--<div class="container-fluid">-->
+                <!--<div class="row">-->
+                    <!--<div class="col-lg-12">-->
+
+                        <!--&lt;!&ndash;<a href="#" class="btn btn-success " id="menu-toggle">Toggle Menu</a>&ndash;&gt;-->
+                        <!--<h1>Sidebar Layouts are Cool</h1>-->
+                        <!--<p>fghfhfhfhfffhgfhgfhgfhfhgfhgfhfhgfhg-->
+                           <!--jhgjghkgjkhgjgjgkgkjgggjjghgkjhg-->
+                           <!--gjhkgjghjghgjghggkjghjghjhkgkgjgjghkjgjjjjjjjjjjjjjjjjjjjjjjjj-->
+                        <!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+                        <!--nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn-->
+                        <!--nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn-->
+                        <!--bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb-->
+                        <!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+                        <!--lllllllllllllllllllllllllllllllllllllllllllllllllllll-->
+                        <!--kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-->
+                        <!--oooooooooooooooooooooooooooooooooooooooooooooooooooooooooo-->
+                        <!--ppppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>-->
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+    <!--&lt;!&ndash; Menu toggle script &ndash;&gt;-->
+    <!--<script>-->
+        <!--$("#menu-toggle").click( function (e){-->
+            <!--e.preventDefault();-->
+            <!--$("#wrapper").toggleClass("menuDisplayed");-->
+        <!--});-->
+
+         <!--function myFunction(x) {-->
+            <!--x.classList.toggle("change");-->
+         <!--}-->
+
+
+
+        <!--&lt;!&ndash;jQuery('#menu-toggle').click(function(){&ndash;&gt;-->
+               <!--&lt;!&ndash;var btn_toggle_comments = document.getElementById("menu-toggle");&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;if (btn_toggle_comments.value=="hide Last 5 Comments")&ndash;&gt;&ndash;&gt;-->
+                <!--&lt;!&ndash;btn_toggle_comments.value="Last 5 Comments";&ndash;&gt;-->
+            <!--&lt;!&ndash;});&ndash;&gt;-->
+    <!--</script>-->
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

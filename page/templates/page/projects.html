@@ -1,0 +1,277 @@
+{% extends 'page/base4.html' %}
+{% load static %}
+<head>
+<link rel="stylesheet" href="{% static 'page/style.css' %}">
+<style>
+
+
+
+</style>
+</head>
+<body>
+{% block content %}
+
+
+
+
+
+
+
+<div id="page-content-wrapper" style="margin-top: 76px">
+    <div class="container-fluid">
+      <div class="row">
+          <div id="title">
+            WYBRANE ZREALIZOWANE PROJEKTY <br>
+            gdgfdgfdgfdgf gfdgfdgdgdg gfdggfhhgfghf hfghfhgfhfhg fhfghfhfhgfh  hgfhgfh
+            fhgfhfhgf fhgfghfhgf  fhfghfhgf fhfhgfhg <br> fhfhgfhg hfghfhgf fhgfghfhgf fhgfh
+            <br><br>
+          </div>
+      </div>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-8">
+
+
+              <!--<skider>-->
+            <div class="container" style="">
+              <div id="carousel-scroll" class="carousel slide img-thumbnail" data-ride="carousel">
+                <ol class="carousel-indicators float-right">
+                  <li data-target="#carousel-scroll" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-scroll" data-slide-to="1"></li>
+                  <li data-target="#carousel-scroll" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+
+                    {% for projects in images %}
+
+                            <div class="carousel-item {% if forloop.counter == 1 %}active{% endif %}" id="slide{{ forloop.counter }}">
+                                <img class="d-block w-100 img-fluid" id="objects" src="{{ projects.project_main_image.url }}" style="">
+                                <div class="carousel-caption img-fluid" style="background: black; opacity:0.4; bottom: 70%">
+                                    <h4>{{ projects.project_name }}</h4>
+                                    <p>{{ projects.project_description}}</p>
+                                </div>
+                            </div>
+
+                    {% endfor %}
+
+                </div>
+
+                <a class="carousel-control-prev" href="#carousel-scroll" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-scroll" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+            </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--<div style="">-->
+                  <!--<div class="row">-->
+                  <!--{% for projects in images %}-->
+                    <!--<div class="col-xs-6 col-md-4 img-with-text accc hover01 hover12" id="box" >-->
+                      <!--&lt;!&ndash;<a href="{% url 'project-details' pk=projects.pk %}">&ndash;&gt;-->
+    <!---->
+                        <!--<img src="{{ projects.project_main_image.url }}" class="img-fluid rounded hover"  id="gallery" >-->
+                        <!--<div>-->
+                            <!--<h2 ><i class="fas fa-arrow-right"></i><br>zobacz szczegóły<br>nazwa</h2>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                      <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                    <!--</div>-->
+                  <!--{% endfor %}-->
+                  <!--</div>-->
+            <!--</div>-->
+
+
+
+
+
+
+
+
+
+            <!--<div class="container-fluid">-->
+                <!--<div class="row" style="  display: flex; flex-wrap: wrap; padding: 0 4px;">-->
+                <!--{% for projects in images %}-->
+                  <!--<div class="col-md-4">-->
+                      <!--<a href="{{ image.get_absolute_url }}"> <img src="{{ projects.project_main_image.url }}" class="img-responsive img-thumbnail" width="500" height="236"/>-->
+                      <!--</a>-->
+                   <!--</div>-->
+                <!--{% endfor %}-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="container-fluid">-->
+                <!--<div class="row" style="  display: flex; flex-wrap: wrap; padding: 0 4px;">-->
+                <!--{% for projects in images %}-->
+                  <!--<div class="col-md-4">-->
+                      <!--<a href="{{ image.get_absolute_url }}"> <img src="{{ projects.project_main_image.url }}" class="img-responsive img-thumbnail" width="500" height="400"/>-->
+                      <!--</a>-->
+                   <!--</div>-->
+                <!--{% endfor %}-->
+                <!--</div>-->
+            <!--</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<ul class="gal" style="margin-left:100px; margin-right: 100px">-->
+        <!--{% for projects in images %}-->
+        <!--<li>-->
+            <!--<a href="{% url 'project-details' pk=projects.pk %}"><figure><img src="{{ projects.project_main_image.url }}" ></figure>-->
+            <!--<div class="box_data">-->
+                <!--<span>Ravi With Bike</span>-->
+            <!--</div></a>-->
+        <!--</li>-->
+        <!--{% endfor %}-->
+
+
+    <!--</ul>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h1>Pure Css Responsive Masonry Gallery</h1>
+
+
+
+
+	<ul class="gal img-responsive" >
+        {% for projects in images %}
+        <li class="img-with-text item hover01 hover12">
+            <a href="{% url 'project-details' pk=projects.pk %}">
+            <figure id="color"><img src="{{ projects.project_main_image.url }}"></figure>
+                <h2 class="book">{{ projects.project_name}}</h2>
+            </a>
+        </li>
+        {% endfor %}
+
+
+
+	</ul>
+
+
+
+
+
+<div style="border: 1px solid transparent; overflow: hidden;">
+    <h1>Pure Css Responsive Masonry Gallery 2</h1>
+
+	<ul class="gal" >
+        {% for projects in images %}
+        <li class="img-with-text item hover01 hover12">
+            <a href="{% url 'project-details' pk=projects.pk %}">
+            <figure id="color"><img src="{{ projects.project_main_image.url }}"></figure>
+                <h2 class="book">{{ projects.project_name}}</h2>
+                <!--<a href=""><h1 style="padding: 10px"><button type="button" ><span style="color: white; "><b><i class="far fa-trash-alt"></i></b></span></button></h1></a>-->
+                <!--<a href=""><h2 style="displey: inline-block"><button type="button" class="btn btn-warning btn-sm round"><span style="color: white; "><b>Modyfikuj Projekt</b></span></button></h2></a>-->
+            </a>
+
+        </li>
+        {% endfor %}
+
+
+
+	</ul>
+
+
+</div>
+
+
+
+
+
+
+
+<table>
+    <th>
+        <td style="width: 40%"></td>
+        <td style="width: 40%"></td>
+        <td style="width: 30%">
+
+<div style="float-right">
+    <a href="{% url 'project-add' %}">
+        <button type="button" class="btn btn-warning btn-lg round"><span style="color: white"><b>Dodaj Projekt</b></span></button>
+    </a>
+
+    <a href="">
+    <button type="button" class="btn btn-warning btn-lg round"><span style="color: white"><b>Usuń zdjęcie</b></span></button><br><br><br>
+    </a>
+</div>
+        </td>
+    </th>
+</table>
+
+
+</div>
+
+
+
+
+
+
+{% endblock %}
+</body>
+
+
+<img src='{{ MEDIA_URL }}{{ imagefile }}'>

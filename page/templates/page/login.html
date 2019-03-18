@@ -1,0 +1,12 @@
+{% extends "page/base4.html" %}
+{% load static %}
+{% block log %}
+    <body class="home">
+        <form method="post" class="text">
+            {% csrf_token %}<br>
+            <input type="text" name="login" placeholder="login">
+            <input type="password" name="password" placeholder="password">
+            <input type="submit" value="login" class="btn btn-primary">
+        </form>
+    </body>
+{% endblock %}

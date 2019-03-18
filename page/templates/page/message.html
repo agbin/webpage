@@ -1,0 +1,50 @@
+{% extends "page/base4.html" %}
+{% load static %}
+{% block content %}
+
+<div id="page-content-wrapper" style="margin-top: 76px">
+    <div class="row">
+        <div class="col-8">
+            <div class="shadow p-3 mb-5 bg-white rounded" style="margin:30px">
+                <h4>Napisz wiadomość, a my odpowiemy</h4>
+                <form role="form" action="" method="post" >{% csrf_token %}
+
+                    {{ form.as_p }}
+                    <input type="submit" value="Wduś guzik" class="btn btn-outline-warning btn-lg">
+                </form>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="shadow p-3 mb-5 bg-white rounded" style="margin-right:20px; margin-top:30px">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <h4>BMB Pracownia Projektowa</h4><br>
+                                <h6>mgr inż. Marek Bińkowski<br>
+                                    projektant instalacji sanitarnych</h6>
+                            </th>
+                        </tr>
+                    </thead><br>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="{% static 'page/phone3.png' %}" style="max-width:10%; margin-bottom:5px"/> +48 692 483 494<br>
+                                <img src="{% static 'page/mail4.png' %}" style="max-width:10%; margin-bottom:5px"/> bmb.pracownia@gmail.com<br>
+                                <img src="{% static 'page/in.png' %}" style="max-width:10%; margin-bottom:5px"/> linkedin:<br>
+                                <img src="{% static 'page/skype.png' %}" style="max-width:12%; margin-bottom:5px; margin-left: -2px"/> bmb-tel<br>
+                                <img src="{% static 'page/city2.png' %}" style="max-width:11%; margin-bottom:4px"/> Siedziba firmy: Wrocław<br>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12 mx-auto text-center">
+            <img class="img-fluid" src="{% static 'page/mailboxA.jpg' %}" style="opacity: 0.5; margin-left: -10px; margin-bottom:-10px " alt="">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
